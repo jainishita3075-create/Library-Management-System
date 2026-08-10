@@ -9998,5 +9998,15 @@
         "price": 40.0,
         "quantity": 100,
         "language": "English"
+    },
+    {
+        "book_title": "money heist",
+        "author": "abc",
+        "genre": "mystery",
+        "publication_date": "2012-02-23",
+        "isbn": "12345678-X",
+        "price": 20.0,
+        "quantity": 122,
+        "language": "english"
     }
 ]

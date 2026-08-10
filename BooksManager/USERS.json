@@ -65,6 +65,15 @@
                 "book": "Pride and Prejudice",
                 "isbn": "870329963-5",
                 "price": 30.43
+            },
+            {
+                "invoice_id": "INV-20260809000402",
+                "date": "2026-08-09 00:04:02",
+                "action": "ISSUE",
+                "book": "The Great Gatsby",
+                "isbn": "849682782-8",
+                "price": 0.0,
+                "due_date": "2026-08-23"
             }
         ]
     },

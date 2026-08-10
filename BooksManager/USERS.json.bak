@@ -57,6 +57,14 @@
                 "isbn": "150288509-3",
                 "price": 0.0,
                 "due_date": "2026-08-22"
+            },
+            {
+                "invoice_id": "INV-20260808201256",
+                "date": "2026-08-08 20:12:56",
+                "action": "BUY",
+                "book": "Pride and Prejudice",
+                "isbn": "870329963-5",
+                "price": 30.43
             }
         ]
     },
