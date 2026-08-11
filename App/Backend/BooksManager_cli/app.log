@@ -1,0 +1,263 @@
+2026-08-06 23:10:27,567 - INFO - Application started.
+2026-08-06 23:10:55,732 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-06 23:11:22,540 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-06 23:11:47,021 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-06 23:14:36,168 - INFO - Application terminated abruptly via KeyboardInterrupt (Ctrl+C).
+2026-08-06 23:14:38,557 - INFO - Application started.
+2026-08-06 23:15:15,932 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-06 23:16:13,657 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-06 23:16:13,657 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-06 23:16:13,684 - INFO - Successfully saved 1002 books to MOCK_DATA.json.
+2026-08-06 23:16:13,716 - INFO - Book added successfully: ISBN 21312eQW`
+2026-08-06 23:16:25,113 - INFO - Successfully loaded 1002 books from MOCK_DATA.json.
+2026-08-06 23:16:25,121 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-06 23:16:25,138 - INFO - Successfully saved 1001 books to MOCK_DATA.json.
+2026-08-06 23:16:25,138 - INFO - Book deleted successfully: ISBN 21312eQW`
+2026-08-06 23:16:56,934 - INFO - Application exited cleanly by user.
+2026-08-06 23:20:55,175 - INFO - Application started.
+2026-08-06 23:21:14,588 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-06 23:21:16,804 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-06 23:21:26,055 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-06 23:21:50,435 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-06 23:22:34,212 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-06 23:22:34,212 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-06 23:22:34,228 - INFO - Successfully saved 1002 books to MOCK_DATA.json.
+2026-08-06 23:22:34,228 - INFO - Book added successfully: ISBN wd2``321
+2026-08-06 23:22:43,676 - INFO - Successfully loaded 1002 books from MOCK_DATA.json.
+2026-08-06 23:22:43,682 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-06 23:22:43,699 - INFO - Successfully saved 1001 books to MOCK_DATA.json.
+2026-08-06 23:22:43,699 - INFO - Book deleted successfully: ISBN wd2``321
+2026-08-06 23:22:53,109 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-06 23:24:31,739 - INFO - Application exited cleanly by user.
+2026-08-07 10:24:38,888 - INFO - Application started.
+2026-08-07 10:25:13,521 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-07 10:30:57,667 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-07 10:30:57,667 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-07 10:30:57,683 - INFO - Successfully saved 1002 books to MOCK_DATA.json.
+2026-08-07 10:30:57,683 - INFO - Book added successfully: ISBN 239bf
+2026-08-07 10:31:08,734 - INFO - Successfully loaded 1002 books from MOCK_DATA.json.
+2026-08-07 10:31:08,736 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-07 10:31:08,746 - INFO - Successfully saved 1001 books to MOCK_DATA.json.
+2026-08-07 10:31:08,746 - INFO - Book deleted successfully: ISBN 239bf
+2026-08-07 10:38:20,556 - INFO - Application exited cleanly by user.
+2026-08-07 10:38:24,264 - INFO - Application started.
+2026-08-07 10:38:36,489 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-07 10:38:41,494 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-07 10:38:57,294 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-07 10:39:13,623 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-07 10:39:41,851 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-07 10:42:24,481 - INFO - Application exited cleanly by user.
+2026-08-07 10:49:12,042 - INFO - Application started.
+2026-08-07 10:49:31,727 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-07 11:03:29,561 - INFO - Application exited cleanly by user.
+2026-08-07 11:03:32,124 - INFO - Application started.
+2026-08-07 11:04:18,605 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-07 11:04:50,721 - INFO - User cancelled book update.
+2026-08-07 11:05:03,037 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-07 11:05:03,039 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-07 11:05:03,047 - INFO - Successfully saved 1000 books to MOCK_DATA.json.
+2026-08-07 11:05:03,047 - INFO - Book deleted successfully: ISBN 618167127-7
+2026-08-07 11:07:04,075 - INFO - Application exited cleanly by user.
+2026-08-07 11:07:05,472 - INFO - Application started.
+2026-08-07 11:07:19,938 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 11:07:23,605 - INFO - User cancelled book deletion.
+2026-08-07 11:15:58,003 - INFO - Application exited cleanly by user.
+2026-08-07 11:16:00,340 - INFO - Application started.
+2026-08-07 11:16:08,556 - WARNING - File USERS.json not found. Returning empty list.
+2026-08-07 11:16:13,477 - WARNING - File USERS.json not found. Returning empty list.
+2026-08-07 11:18:26,326 - WARNING - File USERS.json not found. Returning empty list.
+2026-08-07 11:18:32,280 - WARNING - File USERS.json not found. Returning empty list.
+2026-08-07 11:18:34,331 - WARNING - File USERS.json not found. Returning empty list.
+2026-08-07 11:18:36,799 - INFO - Application exited cleanly by user.
+2026-08-07 11:18:39,977 - INFO - Application started.
+2026-08-07 11:18:43,126 - WARNING - File USERS.json not found. Returning empty list.
+2026-08-07 11:21:54,871 - INFO - Application exited cleanly by user.
+2026-08-07 11:21:57,251 - INFO - Application started.
+2026-08-07 11:22:00,650 - WARNING - File USERS.json not found. Returning empty list.
+2026-08-07 11:22:17,646 - INFO - New user registered: ahsjdvb23
+2026-08-07 11:22:52,009 - INFO - User 'ahsjdvb23' logged in.
+2026-08-07 11:22:54,100 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 11:23:00,558 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 11:23:14,976 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-07 11:23:14,986 - INFO - Successfully saved 1000 books to MOCK_DATA.json.
+2026-08-07 11:23:15,001 - INFO - User 'ahsjdvb23' bought book ISBN 936503519-8
+2026-08-07 11:23:15,162 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 11:23:33,828 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 11:23:53,834 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-07 11:23:53,843 - INFO - Successfully saved 1000 books to MOCK_DATA.json.
+2026-08-07 11:23:53,843 - INFO - User 'ahsjdvb23' issued book ISBN 936503519-8
+2026-08-07 11:29:43,937 - INFO - New user registered: ishita12
+2026-08-07 11:29:54,874 - INFO - User 'ishita12' logged in.
+2026-08-07 11:29:56,935 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 11:30:02,757 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 11:30:10,956 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-07 11:30:10,970 - INFO - Successfully saved 1000 books to MOCK_DATA.json.
+2026-08-07 11:30:10,981 - INFO - User 'ishita12' bought book ISBN 867108888-X
+2026-08-07 11:30:15,034 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 11:30:31,754 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-07 11:30:31,767 - INFO - Successfully saved 1000 books to MOCK_DATA.json.
+2026-08-07 11:30:31,767 - INFO - User 'ishita12' issued book ISBN 867108888-X
+2026-08-07 11:36:18,213 - INFO - Application exited cleanly by user.
+2026-08-07 11:36:20,597 - INFO - Application started.
+2026-08-07 11:36:35,790 - INFO - New user registered: akshat12
+2026-08-07 11:36:53,643 - INFO - User 'akshat12' logged in.
+2026-08-07 11:36:56,007 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 11:37:00,637 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 11:37:08,230 - INFO - Application terminated abruptly via KeyboardInterrupt (Ctrl+C).
+2026-08-07 11:37:18,048 - INFO - Application started.
+2026-08-07 11:37:25,737 - INFO - User 'akshat12' logged in.
+2026-08-07 11:37:28,008 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 11:37:32,528 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-07 11:37:32,541 - INFO - Successfully saved 1000 books to MOCK_DATA.json.
+2026-08-07 11:37:32,559 - INFO - User 'akshat12' bought book ISBN 210775253-2
+2026-08-07 11:37:32,719 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 11:37:38,423 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 11:37:43,335 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 11:37:55,120 - INFO - Application exited cleanly by user.
+2026-08-07 14:03:44,246 - INFO - Application started.
+2026-08-07 14:03:55,384 - INFO - Application exited cleanly by user.
+2026-08-07 14:03:58,739 - INFO - Application started.
+2026-08-07 14:05:38,082 - INFO - Application terminated abruptly via KeyboardInterrupt (Ctrl+C).
+2026-08-07 14:05:40,509 - INFO - Application started.
+2026-08-07 14:07:51,162 - INFO - New user registered: Aditya01
+2026-08-07 14:08:04,540 - INFO - User 'Aditya01' logged in.
+2026-08-07 14:08:37,701 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 14:11:28,112 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 14:12:52,558 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-07 14:12:52,608 - INFO - Successfully saved 1000 books to MOCK_DATA.json.
+2026-08-07 14:12:52,617 - INFO - User 'Aditya01' bought book ISBN 024217013-7
+2026-08-07 14:13:07,664 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 14:15:54,757 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 14:16:12,193 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-07 14:16:12,203 - INFO - Successfully saved 1000 books to MOCK_DATA.json.
+2026-08-07 14:16:12,215 - INFO - User 'Aditya01' issued book ISBN 750914169-9
+2026-08-07 14:17:41,844 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 14:17:49,254 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 14:20:22,979 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 14:21:56,402 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 14:22:35,339 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 14:22:58,780 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 14:25:45,917 - INFO - Application terminated abruptly via KeyboardInterrupt (Ctrl+C).
+2026-08-07 14:29:03,628 - INFO - Application started.
+2026-08-07 14:29:14,648 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 14:30:02,201 - INFO - User 'ishita12' logged in.
+2026-08-07 14:30:06,272 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 14:30:10,729 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 14:34:29,415 - INFO - Application terminated abruptly via KeyboardInterrupt (Ctrl+C).
+2026-08-07 14:34:31,906 - INFO - Application started.
+2026-08-07 14:35:56,078 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-07 14:45:45,274 - INFO - Application exited cleanly by user.
+2026-08-07 14:45:49,170 - INFO - Application started.
+2026-08-07 14:58:46,349 - INFO - Application exited.
+2026-08-07 14:58:48,526 - INFO - Application started.
+2026-08-07 14:59:11,191 - INFO - Application exited.
+2026-08-07 14:59:12,995 - INFO - Application started.
+2026-08-07 14:59:21,253 - INFO - Application terminated abruptly via KeyboardInterrupt (Ctrl+C).
+2026-08-08 11:14:48,354 - INFO - Application started.
+2026-08-08 11:15:10,007 - INFO - User 'ishita12' logged in.
+2026-08-08 11:18:13,102 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 11:18:26,227 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 11:18:31,597 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-08 11:18:31,613 - INFO - Successfully saved 1000 books to MOCK_DATA.json.
+2026-08-08 11:18:31,629 - INFO - User 'ishita12' bought book ISBN 492345244-7
+2026-08-08 11:18:42,345 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 12:36:00,154 - INFO - Application exited cleanly by user.
+2026-08-08 12:36:02,444 - INFO - Application started.
+2026-08-08 12:36:22,930 - INFO - User 'ishita12' logged in.
+2026-08-08 14:18:03,812 - INFO - Application exited cleanly by user.
+2026-08-08 14:18:06,968 - INFO - Application started.
+2026-08-08 14:18:20,845 - INFO - User 'ishita12' logged in.
+2026-08-08 14:18:30,247 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 14:18:41,897 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-08 14:18:41,976 - INFO - Successfully saved 1000 books to MOCK_DATA.json.
+2026-08-08 14:18:41,992 - INFO - User 'ishita12' returned book ISBN None. Fine paid: $0.0
+2026-08-08 14:18:49,349 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 14:18:55,057 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 14:19:09,796 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-08 14:19:09,796 - INFO - Successfully saved 1000 books to MOCK_DATA.json.
+2026-08-08 14:19:09,811 - INFO - User 'ishita12' issued book ISBN 150288509-3
+2026-08-08 14:42:59,147 - INFO - Application terminated abruptly via KeyboardInterrupt (Ctrl+C).
+2026-08-08 19:55:02,616 - INFO - Application started.
+2026-08-08 19:56:35,138 - INFO - Application terminated abruptly via KeyboardInterrupt (Ctrl+C).
+2026-08-08 19:56:37,975 - INFO - Application started.
+2026-08-08 19:56:47,293 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 19:58:47,882 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:00:20,957 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:03:52,814 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:04:49,098 - INFO - User 'ishita12' logged in.
+2026-08-08 20:08:37,812 - INFO - Application exited cleanly by user.
+2026-08-08 20:08:50,647 - INFO - Application started.
+2026-08-08 20:09:01,118 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:09:32,299 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:09:38,053 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:10:12,775 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:10:18,950 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:10:38,132 - INFO - User 'ishita12' logged in.
+2026-08-08 20:12:17,215 - INFO - Application exited cleanly by user.
+2026-08-08 20:12:20,537 - INFO - Application started.
+2026-08-08 20:12:33,931 - INFO - User 'ishita12' logged in.
+2026-08-08 20:12:36,083 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:12:45,432 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:12:56,311 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-08 20:12:56,323 - INFO - Successfully saved 1000 books to MOCK_DATA.json.
+2026-08-08 20:12:56,335 - INFO - User 'ishita12' bought book ISBN 870329963-5
+2026-08-08 20:13:17,385 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:13:31,940 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:14:01,215 - INFO - Application terminated abruptly via KeyboardInterrupt (Ctrl+C).
+2026-08-08 20:14:04,025 - INFO - Application started.
+2026-08-08 20:14:06,597 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:14:08,236 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:14:16,864 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:14:30,400 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:16:52,819 - INFO - Successfully loaded 1000 books from MOCK_DATA.json.
+2026-08-08 20:16:52,829 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-08 20:16:52,845 - INFO - Successfully saved 1001 books to MOCK_DATA.json.
+2026-08-08 20:16:52,845 - INFO - Book added successfully: ISBN 12345678-X
+2026-08-08 20:16:58,613 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-08 20:17:07,170 - INFO - User cancelled book deletion.
+2026-08-08 20:17:15,307 - INFO - Application exited cleanly by user.
+2026-08-08 21:32:54,598 - INFO - Application started.
+2026-08-08 21:33:18,307 - INFO - User 'ishita12' logged in.
+2026-08-09 00:03:34,324 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-09 00:03:42,109 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-09 00:04:02,472 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-09 00:04:02,502 - INFO - Successfully saved 1001 books to MOCK_DATA.json.
+2026-08-09 00:04:02,518 - INFO - User 'ishita12' issued book ISBN 849682782-8
+2026-08-09 23:11:04,330 - INFO - Application started.
+2026-08-09 23:11:24,700 - INFO - User 'ishita12' logged in.
+2026-08-09 23:11:31,794 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-09 23:11:41,432 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 15:49:39,220 - INFO - Application started.
+2026-08-11 16:17:39,483 - INFO - Application started.
+2026-08-11 16:17:47,368 - INFO - User 'ishita12' logged in.
+2026-08-11 16:18:42,656 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 16:32:58,103 - INFO - Application exited cleanly by user.
+2026-08-11 17:57:23,784 - INFO - Application started.
+2026-08-11 17:58:11,268 - INFO - User 'ishita12' logged in.
+2026-08-11 18:02:05,816 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:04:04,159 - INFO - Application exited cleanly by user.
+2026-08-11 18:06:36,135 - INFO - Application started.
+2026-08-11 18:09:34,686 - INFO - Application started.
+2026-08-11 18:22:40,040 - INFO - Application started.
+2026-08-11 18:22:42,204 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:22:48,562 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:25:49,045 - INFO - Application started.
+2026-08-11 18:29:21,721 - INFO - Application started.
+2026-08-11 18:29:29,427 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:29:33,028 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:29:41,793 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:29:53,283 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:29:55,226 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:30:01,944 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:30:11,267 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:30:35,437 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:30:35,447 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-11 18:30:35,457 - INFO - Successfully saved 1002 books to MOCK_DATA.json.
+2026-08-11 18:30:35,457 - INFO - Book added successfully: ISBN 2323
+2026-08-11 18:30:39,692 - INFO - Successfully loaded 1002 books from MOCK_DATA.json.
+2026-08-11 18:30:51,461 - INFO - Successfully loaded 1002 books from MOCK_DATA.json.
+2026-08-11 18:30:51,461 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-11 18:30:51,461 - INFO - Successfully saved 1001 books to MOCK_DATA.json.
+2026-08-11 18:30:51,461 - INFO - Book deleted successfully: ISBN 2323
+2026-08-11 18:30:51,475 - INFO - Admin deleted book ISBN 2323.
+2026-08-11 18:31:02,194 - INFO - Application exited cleanly by user.
