@@ -1,6 +1,6 @@
-# 📚 Library & Bookstore Management System
+# 📚 Library Management System
 
-A Python-based Library & Bookstore Management System that includes both a **CLI application** and a **FastAPI REST API**.
+A Python-based Library Management System that includes both a **CLI application** and a **FastAPI REST API**.
 
 The system manages books, purchases, borrowing, returns, searching, filtering, and transaction history.
 
@@ -32,7 +32,7 @@ The CLI provides two portals.
 
 ---
 
-## 🌐 FastAPI
+## 🌐 FastAPI 
 
 The FastAPI backend provides REST APIs for book management.
 
@@ -51,11 +51,13 @@ The FastAPI backend provides REST APIs for book management.
 
 ---
 
-## ▶️ Run FastAPI
+## ▶️ Run FastAPI and CLI
 
 Go to the backend folder:
 
 ```bash
+## ▶️ Run FastAPI
+
 cd App/Backend
 
 ## Install dependencies: 
