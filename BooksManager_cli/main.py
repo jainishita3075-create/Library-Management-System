@@ -4,7 +4,7 @@ from rich.console import Console
 from rich.table import Table
 from rich.panel import Panel
 
-from Utility.file_handler import (
+from services.file_handler import (
     load_books,
     view_books,
     search_books,
@@ -29,7 +29,7 @@ from Utility.numeric_validator import (
     prompt_float,
     prompt_int
 )
-from Utility.loggers import get_logger
+from loggers import get_logger
 
 # Initialize logger and rich console
 logger = get_logger(__name__)

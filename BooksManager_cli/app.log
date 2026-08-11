@@ -228,3 +228,6 @@
 2026-08-09 23:11:31,794 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
 2026-08-09 23:11:41,432 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
 2026-08-11 15:49:39,220 - INFO - Application started.
+2026-08-11 16:17:39,483 - INFO - Application started.
+2026-08-11 16:17:47,368 - INFO - User 'ishita12' logged in.
+2026-08-11 16:18:42,656 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
