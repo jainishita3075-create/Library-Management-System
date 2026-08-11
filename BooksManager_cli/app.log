@@ -231,3 +231,33 @@
 2026-08-11 16:17:39,483 - INFO - Application started.
 2026-08-11 16:17:47,368 - INFO - User 'ishita12' logged in.
 2026-08-11 16:18:42,656 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 16:32:58,103 - INFO - Application exited cleanly by user.
+2026-08-11 17:57:23,784 - INFO - Application started.
+2026-08-11 17:58:11,268 - INFO - User 'ishita12' logged in.
+2026-08-11 18:02:05,816 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:04:04,159 - INFO - Application exited cleanly by user.
+2026-08-11 18:06:36,135 - INFO - Application started.
+2026-08-11 18:09:34,686 - INFO - Application started.
+2026-08-11 18:22:40,040 - INFO - Application started.
+2026-08-11 18:22:42,204 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:22:48,562 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:25:49,045 - INFO - Application started.
+2026-08-11 18:29:21,721 - INFO - Application started.
+2026-08-11 18:29:29,427 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:29:33,028 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:29:41,793 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:29:53,283 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:29:55,226 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:30:01,944 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:30:11,267 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:30:35,437 - INFO - Successfully loaded 1001 books from MOCK_DATA.json.
+2026-08-11 18:30:35,447 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-11 18:30:35,457 - INFO - Successfully saved 1002 books to MOCK_DATA.json.
+2026-08-11 18:30:35,457 - INFO - Book added successfully: ISBN 2323
+2026-08-11 18:30:39,692 - INFO - Successfully loaded 1002 books from MOCK_DATA.json.
+2026-08-11 18:30:51,461 - INFO - Successfully loaded 1002 books from MOCK_DATA.json.
+2026-08-11 18:30:51,461 - INFO - Backup created at MOCK_DATA.json.bak.
+2026-08-11 18:30:51,461 - INFO - Successfully saved 1001 books to MOCK_DATA.json.
+2026-08-11 18:30:51,461 - INFO - Book deleted successfully: ISBN 2323
+2026-08-11 18:30:51,475 - INFO - Admin deleted book ISBN 2323.
+2026-08-11 18:31:02,194 - INFO - Application exited cleanly by user.

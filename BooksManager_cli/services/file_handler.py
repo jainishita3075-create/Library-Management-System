@@ -1,7 +1,7 @@
 import json
 import os
 import shutil
-from loggers import get_logger
+from Utility.loggers import *
 from rich.console import Console
 from rich.table import Table
 

@@ -56,7 +56,7 @@
         "publication_date": "1/19/1999",
         "isbn": "849682782-8",
         "price": 54.03,
-        "quantity": 632,
+        "quantity": 631,
         "language": "Tatar"
     },
     {
@@ -10008,5 +10008,15 @@
         "price": 20.0,
         "quantity": 122,
         "language": "english"
+    },
+    {
+        "book_title": "12",
+        "author": "def",
+        "genre": "er",
+        "publication_date": "1033-12-12",
+        "isbn": "2323",
+        "price": 1231.0,
+        "quantity": 12,
+        "language": "f"
     }
 ]
