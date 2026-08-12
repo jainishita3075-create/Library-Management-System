@@ -1,6 +1,6 @@
 # 📚 Library Management System
 
-A Python-based Library Management System that includes both a **CLI application** and a **FastAPI REST API**.
+A Python-based Library Management System that includes both a **CLI application** and a **FastAPI**.
 
 The system manages books, purchases, borrowing, returns, searching, filtering, and transaction history.
 
@@ -17,6 +17,7 @@ The CLI provides two portals.
 - Browse Library
 - Buy a Book
 - Issue a Book
+- Borrow a Book
 - Return an Issued Book
 - View Complete History
 
