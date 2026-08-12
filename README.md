@@ -17,6 +17,7 @@ The CLI provides two portals.
 - Browse Library
 - Buy a Book
 - Issue a Book
+- Borrow a Book
 - Return an Issued Book
 - View Complete History
 
