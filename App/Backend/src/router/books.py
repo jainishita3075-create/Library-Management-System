@@ -18,8 +18,8 @@ router = APIRouter()
 # ==========================================
 class Book(BaseModel):
     book_id: Optional[str] = None  
-    isbn: str = Field(..., min_length=10, max_length=13)
-    book_title: str = Field(..., min_length=1)  # Changed from 'title'
+    isbn: str = Field(..., min_length=10, max_length=20)
+    book_title: str = Field(..., min_length=1)
     author: str
     genre: str
     publication_date: str
@@ -27,8 +27,18 @@ class Book(BaseModel):
     quantity: int = Field(..., ge=0)
     language: str
 
+class BookCreate(BaseModel):
+    isbn: str = Field(..., min_length=10, max_length=20, description="ISBN (10-20 characters)")
+    book_title: str = Field(..., min_length=1, description="Book Title")
+    author: str = Field(..., description="Author")
+    genre: str = Field(..., description="Genre/Category")
+    publication_date: str = Field(..., description="Publication Date (e.g. YYYY-MM-DD)")
+    price: float = Field(..., gt=0, description="Book Price")
+    quantity: int = Field(..., ge=0, description="Stock Quantity")
+    language: str = Field(..., description="Language")
+
 class BookUpdate(BaseModel):
-    book_title: Optional[str] = None  # Changed from 'title'
+    book_title: Optional[str] = None
     author: Optional[str] = None
     genre: Optional[str] = None
     publication_date: Optional[str] = None
@@ -39,6 +49,11 @@ class BookUpdate(BaseModel):
 class TransactionRequest(BaseModel):
     user_id: str = Field(..., description="The ID of the user performing the action")
     isbn: str = Field(..., description="The ISBN of the book")
+
+class BuyBookRequest(BaseModel):
+    user_id: str = Field(..., description="The ID of the user performing the purchase")
+    isbn: str = Field(..., description="The ISBN of the book to buy")
+    shipping_address: Optional[str] = Field(None, description="Custom shipping address. If omitted, user's registered address is used.")
 
 class BuyRequest(BaseModel):
     isbn: str
@@ -83,24 +98,30 @@ def filter_books(
 # USER TRANSACTION ENDPOINTS
 # ==========================================
 @router.post("/buy")
-def api_buy_book(request: TransactionRequest):
-    result = execute_purchase(request.user_id, request.isbn)
+def api_buy_book(request: BuyBookRequest):
+    result = execute_purchase(request.user_id, request.isbn, shipping_address=request.shipping_address)
     if not result["success"]:
-        raise HTTPException(status_code=400, detail=result["error"])
+        err_msg = result["error"]
+        status_code = status.HTTP_404_NOT_FOUND if "not found" in err_msg.lower() else status.HTTP_400_BAD_REQUEST
+        raise HTTPException(status_code=status_code, detail=err_msg)
     return {"message": "Purchase successful!", "receipt": result["receipt"]}
 
 @router.post("/issue")
 def api_issue_book(request: TransactionRequest):
     result = execute_issue(request.user_id, request.isbn)
     if not result["success"]:
-        raise HTTPException(status_code=400, detail=result["error"])
+        err_msg = result["error"]
+        status_code = status.HTTP_404_NOT_FOUND if "not found" in err_msg.lower() else status.HTTP_400_BAD_REQUEST
+        raise HTTPException(status_code=status_code, detail=err_msg)
     return {"message": "Book issued successfully! Please note the due date.", "receipt": result["receipt"]}
 
 @router.post("/return")
 def api_return_book(request: TransactionRequest):
     result = execute_return(request.user_id, request.isbn)
     if not result["success"]:
-        raise HTTPException(status_code=400, detail=result["error"])
+        err_msg = result["error"]
+        status_code = status.HTTP_404_NOT_FOUND if "not found" in err_msg.lower() else status.HTTP_400_BAD_REQUEST
+        raise HTTPException(status_code=status_code, detail=err_msg)
         
     response = {"message": "Book returned successfully!"}
     if result.get("fine_paid", 0) > 0:
@@ -113,57 +134,48 @@ def api_return_book(request: TransactionRequest):
 # ADMIN ENDPOINTS (Manage Books)
 # ==========================================
 @router.post("/admin/add", response_model=Book, status_code=status.HTTP_201_CREATED)
-def admin_add_book(book: Book):
-    result = book_service.add_new_book(book.dict())
+def admin_add_book(book: BookCreate):
+    payload = book.model_dump() if hasattr(book, "model_dump") else book.dict()
+    result = book_service.add_new_book(payload)
     if not result["success"]:
         raise HTTPException(status_code=400, detail=result["error"])
     return result["book"]
 
 
-# 1. Removed response_model=Book
-# 2. Changed /{isbn} to /{identifier} to match the function variable
 @router.put("/admin/{identifier}")
 def admin_update_book(
     identifier: str, 
     updates: BookUpdate, 
-    by: str = Query("book_id", regex="^(book_id|isbn)$"),
-    # 3. Added the confirm toggle for the Yes/No logic
+    by: Optional[str] = Query(None, description="Search by 'book_id', 'isbn', or 'book_title'. If omitted, auto-detected."),
     confirm: bool = Query(False, description="Set to True to save changes. False to just preview.")
 ):
-    update_data = updates.dict(exclude_unset=True)
-    
-    # 4. Point it to the new preview function in your service layer
-    result = book_service.update_book_preview(identifier, update_data, by, confirm)
-    
-    if not result.get("success"):
-        raise HTTPException(status_code=404, detail=result.get("error"))
-        
-    return result
-
-# 1. Changed /{isbn} to /{identifier} to match the function variable
-@router.delete("/admin/{identifier}")
-def admin_delete_book(
-    identifier: str, 
-    # 2. Removed 'title' from regex since you only want ID or ISBN
-    by: str = Query("book_id", regex="^(book_id|isbn)$"),
-    # 3. Added the confirm toggle for the Yes/No logic
-    confirm: bool = Query(False, description="Set to True to actually delete. False to preview book details.")
-):
-    # 4. Point it to the preview function we created in your service layer
-    result = book_service.delete_book_preview(identifier, by, confirm)
+    update_data = updates.model_dump(exclude_unset=True) if hasattr(updates, "model_dump") else updates.dict(exclude_unset=True)
+    result = book_service.update_book(identifier, update_data, by, confirm)
     
     if not result.get("success"):
         raise HTTPException(status_code=404, detail=result.get("error", "Book not found."))
         
-    # 5. Return the result directly (it handles both the preview data and the success message)
     return result
 
-@router.get("/admin/history/{isbn}")
+@router.delete("/admin/{identifier}")
+def admin_delete_book(
+    identifier: str, 
+    by: Optional[str] = Query(None, description="Search by 'book_id', 'isbn', or 'book_title'. If omitted, auto-detected."),
+    confirm: bool = Query(False, description="Set to True to actually delete. False to preview book details.")
+):
+    result = book_service.delete_book(identifier, by, confirm)
+    
+    if not result.get("success"):
+        raise HTTPException(status_code=404, detail=result.get("error", "Book not found."))
+        
+    return result
+
+@router.get("/admin/history/{identifier}")
 def admin_get_book_history(
     identifier: str, 
-    by: str = Query("book_id", regex="^(book_id|isbn|title)$")
+    by: Optional[str] = Query(None, description="Search by 'book_id', 'isbn', 'book_title', or 'user_id'. If omitted, auto-detected.")
 ):
-    result = fetch_book_history(identifier, by)
-    if not result["success"]:
-        raise HTTPException(status_code=404, detail=result["error"])
-    return {"history": result["history"]}
+    result = book_service.fetch_history(identifier, by)
+    if not result.get("success"):
+        raise HTTPException(status_code=404, detail=result.get("error", "No history found."))
+    return result

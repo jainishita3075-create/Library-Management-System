@@ -1,6 +1,7 @@
 import json
 import os
 import shutil
+from config import BOOKS_FILE, USERS_FILE
 from src.utility.loggers import get_logger
 from rich.console import Console
 from rich.table import Table
@@ -8,7 +9,7 @@ from rich.table import Table
 logger = get_logger(__name__)
 console = Console()
 
-def load_books(filename="MOCK_DATA.json"):
+def load_books(filename=None):
     """
     Loads books from the JSON file safely.
     
@@ -17,6 +18,8 @@ def load_books(filename="MOCK_DATA.json"):
         print(len(books))
         1000
     """
+    if filename is None:
+        filename = BOOKS_FILE
     try:
         with open(filename, "r", encoding="utf-8") as file:
             books = json.load(file)
@@ -112,7 +115,7 @@ def _display_books_table(books, title="Books", page_size=20):
                 break
 
 
-def view_books(filename="MOCK_DATA.json"):
+def view_books(filename=None):
     """
     Displays all books stored in the JSON file in a paginated table.
     
@@ -120,6 +123,8 @@ def view_books(filename="MOCK_DATA.json"):
         view_books("MOCK_DATA.json")
         # Opens an interactive, paginated table of all books
     """
+    if filename is None:
+        filename = BOOKS_FILE
     books = load_books(filename)
     _display_books_table(books, title="All Library Books")
 
@@ -203,9 +208,15 @@ def add_book(filename, book):
             print("Book with this ISBN already exists.")
             return False
 
+    # Auto-increment book_id from latest numeric ID if missing or non-numeric
+    if not str(book.get("book_id", "")).strip().isdigit():
+        existing_nums = [int(str(b.get("book_id", "")).strip()) for b in books if str(b.get("book_id", "")).strip().isdigit()]
+        next_num = max(existing_nums) + 1 if existing_nums else 101
+        book["book_id"] = str(next_num)
+
     books.append(book)
     if _save_books(filename, books):
-        logger.info(f"Book added successfully: ISBN {book.get('isbn')}")
+        logger.info(f"Book added successfully: ID {book.get('book_id')}, ISBN {book.get('isbn')}")
         print("Book added successfully.")
         return True
     return False
@@ -258,8 +269,10 @@ def delete_book(filename, isbn):
     print("Book not found.")
     return False
 
-def load_users(filename="USERS.json"):
+def load_users(filename=None):
     """Loads users from the JSON file safely."""
+    if filename is None:
+        filename = USERS_FILE
     try:
         with open(filename, "r", encoding="utf-8") as file:
             return json.load(file)

@@ -31,7 +31,7 @@ def str_int(value: str) -> int:
     """
     try:
         return int(value)
-    except:
+    except (ValueError, TypeError):
         raise ValueError("Value should be an Integer")
 
 def str_float(value: str) -> float:
@@ -44,7 +44,7 @@ def str_float(value: str) -> float:
     """
     try:
         return float(value)
-    except:
+    except (ValueError, TypeError):
         raise ValueError("Value should be in Decimals")
 
 def str_bool(value: str) -> bool:
@@ -55,9 +55,11 @@ def str_bool(value: str) -> bool:
         >>> str_bool("yes")
         True
     """
+    if not isinstance(value, str):
+        raise ValueError("Value must be a string representing True or False")
     value = value.strip().lower()
-    if value in ('1','yes','true'):
+    if value in ('1', 'yes', 'true'):
         return True
-    if value in ('0','no','false'):
+    if value in ('0', 'no', 'false'):
         return False
     raise ValueError("Value must be True or False")

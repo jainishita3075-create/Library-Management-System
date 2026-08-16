@@ -14,17 +14,22 @@ def _check_duplicate(username: str, target_book: dict, users: list) -> bool:
             return True
     return False
 
-def _generate_invoice_data(action: str, book: dict, price: float) -> dict:
-    return {
-        "invoice_id": f"INV-{datetime.now().strftime('%Y%m%d%H%M%S')}",
-        "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+def _generate_invoice_data(action: str, book: dict, price: float, user_id: str = "N/A", shipping_address: str = None) -> dict:
+    invoice = {
+        "invoice_id": f"INV-{datetime.now().strftime('%Y%m%d%H%M%S')}-{str(uuid.uuid4())[:4]}",
+        "date_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "user_id": user_id,
         "action": action,
-        "book": book.get('book_title'),
-        "isbn": book.get('isbn'),
+        "book_id": book.get("book_id", "N/A"),
+        "book_title": book.get("book_title", "N/A"),
+        "isbn": book.get("isbn"),
         "price": price
     }
+    if shipping_address:
+        invoice["shipping_address"] = shipping_address
+    return invoice
 
-def execute_purchase(username: str, isbn: str) -> dict:
+def execute_purchase(username: str, isbn: str, shipping_address: str = None) -> dict:
     books = load_books(BOOKS_FILE)
     users = load_users(USERS_FILE)
     
@@ -38,9 +43,12 @@ def execute_purchase(username: str, isbn: str) -> dict:
     if _check_duplicate(username, target_book, users):
         return {"success": False, "error": "User already has this book in history."}
         
+    target_user = next((u for u in users if u.get("username") == username), None)
+    final_shipping = shipping_address if shipping_address else (target_user.get("address", "N/A") if target_user else "N/A")
+
     target_book["quantity"] -= 1
     price = target_book.get('price', 0.0)
-    receipt = _generate_invoice_data("BUY", target_book, price)
+    receipt = _generate_invoice_data("BUY", target_book, price, user_id=target_user.get("user_id", "N/A") if target_user else username, shipping_address=final_shipping)
     
     for user in users:
         if user.get("username") == username:
@@ -115,16 +123,3 @@ def execute_return(username: str, isbn: str) -> dict:
     _save_users(USERS_FILE, users)
     
     return {"success": True, "fine_paid": fine, "record": issued_record}
-
-
-def _generate_invoice_data(action: str, book: dict, price: float, user_id: str) -> dict:
-    return {
-        "invoice_id": f"INV-{datetime.now().strftime('%Y%m%d%H%M%S')}-{str(uuid.uuid4())[:4]}",
-        "date_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "user_id": user_id,
-        "action": action,
-        "book_id": book.get("book_id", "N/A"),           # Won't be null anymore
-        "book_title": book.get("book_title", "N/A"),     # Fixed key name!
-        "isbn": book.get("isbn"),
-        "price": price
-    }

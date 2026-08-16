@@ -1,3 +1,4 @@
+# pyrefly: ignore [missing-import]
 from fastapi import APIRouter, HTTPException, status
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any
@@ -26,7 +27,8 @@ class UserCredentials(BaseModel):
 # ==========================================
 @router.post("/register", status_code=status.HTTP_201_CREATED)
 def api_register_user(data: UserRegistration):
-    result = auth_service.register_new_user(data.dict())
+    payload = data.model_dump() if hasattr(data, "model_dump") else data.dict()
+    result = auth_service.register_new_user(payload)
     if not result["success"]:
         raise HTTPException(status_code=400, detail=result["error"])
     return {"message": result["message"], "user_id": result.get("user_id")}
